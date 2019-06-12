@@ -72,5 +72,5 @@ public class StringQueue implements Queue {
 
 		return element;
 	}
-	
+
 }
