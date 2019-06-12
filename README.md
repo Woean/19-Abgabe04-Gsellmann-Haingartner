@@ -31,7 +31,7 @@ management/tree/master/test-automation/Queue
 
   - [x] Ergänzen Sie das Beispiel nach eigenen Ermessen um es testen zu können.
 
-- [ ] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
+- [x] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
 
   - [ ] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
 
@@ -97,7 +97,18 @@ management/tree/master/test-automation/Queue
 - danach wurden die Arbeitsaufträge durchgesehen und das benötigte Repository erstellt
 - anschließend wurde die Tasklist erstellt und Markdwon gelernt
 
+****Code korrigieren****
+
 - beim ersten "richtigen" Arbeitsauftrag, mussten wir eine bereits mittels Interface implementierte Queue durchsehen und Fehler finden. Um dies zu bewerkstelligen, haben wir zuerst die Methoden mittels der Kommentare im Interface zu verstehen versucht und danach eine Main Klasse zum Testen erstellt. Somit wurden insgesamt die 3 mutwillig in den Code platzierten Fehler gefunden: 
-- im Constructor ein typo
+- im Constructor ein typo 
 - in der poll Methode ein Implementierungsfehler
 - in der remove Methode ebenfalls ein Implentierungsfehler
+
+****Javadoc****
+
+Es wurden für die Klasse StringQueue, für den darin enthaltenen Konstruktor und den darin enthaltenen Methoden Javadoc Kommentare erstellt. Es wurde mit IntelliJ gearbeitet; wenn oberhalb einer Methode ein Javadoc Kommentar mittels
+/**
+*
+*
+/
+erzeugt wird, werden die übergebenen zu beschreibenden Parameter @param schon vorgeschlagen. Nun wird für jedes Kommentar eine Kurzbeschreibung verfasst, die Parameter, return Werte oder exceptions die gethrowed werden ebenfalls beschrieben. In IntelliJ kann man einfach durch klicken auf -> tools -> generate eine Api Dokumentation in HTML automatisch erzeugen. Siehe Bid: 
