@@ -29,6 +29,7 @@ public class StringQueue implements Queue {
 
 	@Override
 	public String poll() {
+
 		String element = peek();
 
 		if(elements.size() == 0){
@@ -71,5 +72,5 @@ public class StringQueue implements Queue {
 
 		return element;
 	}
-
+	
 }
