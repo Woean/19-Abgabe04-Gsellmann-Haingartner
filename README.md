@@ -1,4 +1,14 @@
-# 19-Abgabe04-Gsellmann-Haingartner #
+# Lab Report vertiefende Gesamtwiederholung #
+
+Abgabe 04
+
+Gerald Gsellmann
+
+Werner Haingartner
+
+Repository: https://github.com/Woean/19-Abgabe04-Gsellmann-Haingartner
+
+Dieses Readme dient als Protokoll für die abschließende Übung. 
 
 ## Task List ##
 
@@ -11,15 +21,15 @@ management/tree/master/test-automation/Queue
 
   - [x] Führung Taskliste
 
-  - [ ] Veröffentlichung in Git mit aktuell durchgeführten Tätigkeiten, z.B. Testfälle geschrieben so wird auch in der Taskliste diese Aufgabe als erledigt markiert und Testfälle inkl. geänderter Taskliste ins Repository übertragen.
+  - [x] Veröffentlichung in Git mit aktuell durchgeführten Tätigkeiten, z.B. Testfälle geschrieben so wird auch in der Taskliste diese Aufgabe als erledigt markiert und Testfälle inkl. geänderter Taskliste ins Repository übertragen.
 
-- [ ] Korrigieren Sie den Code bzw. Debuggen Sie ihn um die Fehler zu finden
+- [x] Korrigieren Sie den Code bzw. Debuggen Sie ihn um die Fehler zu finden
 
-  - [ ] Es befinden sich gesamt 3 Fehler im Source Code.
+  - [x] Es befinden sich gesamt 3 Fehler im Source Code.
 
-  - [ ] Bei Bedarf Optimieren Sie das Queue Beispiel.
+  - [x] Bei Bedarf Optimieren Sie das Queue Beispiel.
 
-  - [ ] Ergänzen Sie das Beispiel nach eigenen Ermessen um es testen zu können.
+  - [x] Ergänzen Sie das Beispiel nach eigenen Ermessen um es testen zu können.
 
 - [ ] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
 
@@ -80,3 +90,14 @@ management/tree/master/test-automation/Queue
 - [ ] Überprüfung Vollständigkeit der Abgabe
 
 - [ ] Abgabe PDF Version der Abgabe
+
+***Vorgehen:***
+
+- zuerst wurden alle benötigten Dokumente von Moodle gedownloaded
+- danach wurden die Arbeitsaufträge durchgesehen und das benötigte Repository erstellt
+- anschließend wurde die Tasklist erstellt und Markdwon gelernt
+
+- beim ersten "richtigen" Arbeitsauftrag, mussten wir eine bereits mittels Interface implementierte Queue durchsehen und Fehler finden. Um dies zu bewerkstelligen, haben wir zuerst die Methoden mittels der Kommentare im Interface zu verstehen versucht und danach eine Main Klasse zum Testen erstellt. Somit wurden insgesamt die 3 mutwillig in den Code platzierten Fehler gefunden: 
+- im Constructor ein typo
+- in der poll Methode ein Implementierungsfehler
+- in der remove Methode ebenfalls ein Implentierungsfehler

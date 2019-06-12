@@ -16,14 +16,14 @@ public class StringQueue implements Queue {
 	public StringQueue(int maxSize){
 		this.maxSize = maxSize;
 	}
-	
+
 	@Override
 	public boolean offer(String obj) {
 		if(elements.size()!= maxSize)
 			elements.add(obj);
 		else
 			return false;
-		
+
 		return true;
 	}
 
@@ -31,21 +31,25 @@ public class StringQueue implements Queue {
 	public String poll() {
 
 		String element = peek();
-		
-		if(elements.size() != 0){
-			elements.remove(0);
-			return element;
-		}else{
+
+		if(elements.size() == 0){
 			return null;
+		} else {
+			elements.remove(0);
 		}
+
+		return element;
 	}
 
 	@Override
 	public String remove() {
 		String element = poll();
+
 		if(element == null)
 			throw new NoSuchElementException("there's no element any more");
-		
+		else
+			elements.remove(0);
+
 		return element;
 	}
 
@@ -56,7 +60,7 @@ public class StringQueue implements Queue {
 			element = elements.get(0);
 		else
 			element = null;
-		
+
 		return element;
 	}
 
@@ -65,10 +69,8 @@ public class StringQueue implements Queue {
 		String element = peek();
 		if(element == null)
 			throw new NoSuchElementException("there's no element any more");
-		
+
 		return element;
 	}
-
-
-
+	
 }
