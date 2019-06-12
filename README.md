@@ -33,15 +33,15 @@ management/tree/master/test-automation/Queue
 
 - [x] Erstellen Sie für Klasse und alle Methoden Kommentare um mittels Javadoc eine API Dokumentation zu erzeugen
 
-  - [ ] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
+  - [x] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
 
-- [ ] Erstellung JUnit Tests (vollständig testen, mehrere Varianten)
+- [x] Erstellung JUnit Tests (vollständig testen, mehrere Varianten)
 
-  - [ ] Sie werden die „selben“ Testfälle mehrfach erstellen müssen um „mehrere Variationen“ für einen möglichst vollständigen Test zu erreichen. Achten Sie dabei mit unterschiedlichen Daten zu testen.
+  - [x] Sie werden die „selben“ Testfälle mehrfach erstellen müssen um „mehrere Variationen“ für einen möglichst vollständigen Test zu erreichen. Achten Sie dabei mit unterschiedlichen Daten zu testen.
 
-  - [ ] JavaDoc Kommentare erstellen.
+  - [x] JavaDoc Kommentare erstellen.
 
-  - [ ] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
+  - [x] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
 
 - [ ] Passen Sie Ihr pom.xml auf das Projekt an, damit Sie das Projekt erstellen aber auch Dokumentation generieren können.
 
@@ -114,3 +114,9 @@ Es wurden für die Klasse StringQueue, für den darin enthaltenen Konstruktor un
 erzeugt wird, werden die übergebenen zu beschreibenden Parameter @param schon vorgeschlagen. Nun wird für jedes Kommentar eine Kurzbeschreibung verfasst, die Parameter, return Werte oder exceptions die gethrowed werden ebenfalls beschrieben. In IntelliJ kann man einfach durch klicken auf -> tools -> generate eine Api Dokumentation in HTML automatisch erzeugen. Siehe Bid: 
 
 ![JavaDoc](media/javadoc.png)
+
+****JUnit Tests****
+
+Es wurden mit Hilfe von JUnit testcases implementiert, die die Funktionalität der StringQueue durchtesten und somit gewährleisten sollten. Es wurde wieder mit IntelliJ gearbeitet, weil sich diese IDE gut für JUnit eignet. Zudem wurden für alle Testcases wie im nachfolgenden Bild sichtbar Javadoc kommentare erstellt: 
+
+![JavaDoc](media/javadoc_junit.png)
