@@ -112,3 +112,5 @@ Es wurden für die Klasse StringQueue, für den darin enthaltenen Konstruktor un
 *
 /
 erzeugt wird, werden die übergebenen zu beschreibenden Parameter @param schon vorgeschlagen. Nun wird für jedes Kommentar eine Kurzbeschreibung verfasst, die Parameter, return Werte oder exceptions die gethrowed werden ebenfalls beschrieben. In IntelliJ kann man einfach durch klicken auf -> tools -> generate eine Api Dokumentation in HTML automatisch erzeugen. Siehe Bid: 
+
+![JavaDoc](media/javadoc.jpg)
