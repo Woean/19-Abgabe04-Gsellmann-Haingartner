@@ -59,10 +59,12 @@ public class StringQueue implements Queue {
 
 		String element = peek();
 
-		if(elements.size() == 0){
-			return null;
-		} else {
+		if(elements.size() != 0){
+
 			elements.remove(0);
+
+		} else {
+			return null;
 		}
 
 		return element;
@@ -75,14 +77,14 @@ public class StringQueue implements Queue {
 	 */
 	@Override
 	public String remove() {
-		String element = poll();
+		String element = peek();
 
 		if(element == null)
 			throw new NoSuchElementException("there's no element any more");
-		else
+		else{
 			elements.remove(0);
 
-		return element;
+		return element;}
 	}
 
 
