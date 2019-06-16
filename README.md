@@ -63,33 +63,33 @@ management/tree/master/test-automation/Queue
 
   - [x] Ergebnisse (Konsolenausgabe) als Bild in Dokumentation einfließen lassen.
 
-- [ ] Maven Site Dokumentation erstellen
+- [x] Maven Site Dokumentation erstellen
 
-  - [ ] Inklusive Javadoc Code und Javadoc Test Klassen
+  - [x] Inklusive Javadoc Code und Javadoc Test Klassen
 
-  - [ ] Inklusive Menü mit Verweis auf manuell erstellte Seite
+  - [x] Inklusive Menü mit Verweis auf manuell erstellte Seite
 
-    - [ ] Seite erläutert Funktionsweise Queue
+    - [x] Seite erläutert Funktionsweise Queue
 
-  - [ ] Geben Sie ein Bild der Maven Site Dokumentation in den Lab Report
+  - [x] Geben Sie ein Bild der Maven Site Dokumentation in den Lab Report
 
-    - [ ] Der Inhalt der manuell erstellten Seite sollte ersichtlich sein
+    - [x] Der Inhalt der manuell erstellten Seite sollte ersichtlich sein
 
-- [ ] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
+- [x] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
 
-  - [ ] Übertragung Information aus Labreport Template.
+  - [x] Übertragung Information aus Labreport Template.
 
-  - [ ] Alle Schritte dieser Übung nachvollziehbar erläutern.
+  - [x] Alle Schritte dieser Übung nachvollziehbar erläutern.
 
-  - [ ] Übung Github Flavor: Erstellen Sie einen Codeblock im Dokument, welcher 3   Zeilen Python und 3 Zeilen Java Source Code korrekt darstellt.
+  - [x] Übung Github Flavor: Erstellen Sie einen Codeblock im Dokument, welcher 3   Zeilen Python und 3 Zeilen Java Source Code korrekt darstellt.
 
-  - [ ] Korrekturlesen Dokumentation
+  - [x] Korrekturlesen Dokumentation
 
-  - [ ] PDF erstellen (zB Dillinger)
+  - [x] PDF erstellen (zB Dillinger)
 
-- [ ] Überprüfung Vollständigkeit der Abgabe
+- [x] Überprüfung Vollständigkeit der Abgabe
 
-- [ ] Abgabe PDF Version der Abgabe
+- [x] Abgabe PDF Version der Abgabe
 
 ***Vorgehen:***
 
@@ -99,8 +99,9 @@ management/tree/master/test-automation/Queue
 
 ****Code korrigieren****
 
-- beim ersten "richtigen" Arbeitsauftrag, mussten wir eine bereits mittels Interface implementierte Queue durchsehen und Fehler finden. Um dies zu bewerkstelligen, haben wir zuerst die Methoden mittels der Kommentare im Interface zu verstehen versucht und danach eine Main Klasse zum Testen erstellt. Somit wurden insgesamt die 3 mutwillig in den Code platzierten Fehler gefunden: 
-- im Constructor ein typo 
+- beim ersten "richtigen" Arbeitsauftrag, mussten wir eine bereits mittels Interface implementierte Queue durchsehen und Fehler finden. Um dies zu bewerkstelligen, haben wir zuerst die Methoden mittels der Kommentare im Interface zu verstehen versucht und gestet. Somit wurden insgesamt die 3 mutwillig in den Code platzierten Fehler gefunden und korrigiert. 
+
+- im Constructor ein typo (falsch geschriebener Übergabeparameter)
 - in der poll Methode ein Implementierungsfehler
 - in der remove Methode ebenfalls ein Implentierungsfehler
 
@@ -111,13 +112,13 @@ Es wurden für die Klasse StringQueue, für den darin enthaltenen Konstruktor un
 *
 *
 /
-erzeugt wird, werden die übergebenen zu beschreibenden Parameter @param schon vorgeschlagen. Nun wird für jedes Kommentar eine Kurzbeschreibung verfasst, die Parameter, return Werte oder exceptions die gethrowed werden ebenfalls beschrieben. In IntelliJ kann man einfach durch klicken auf -> tools -> generate eine Api Dokumentation in HTML automatisch erzeugen. Siehe Bid: 
+erzeugt wird, werden die übergebenen zu beschreibenden Parameter @param schon vorgeschlagen. Nun wird für jedes Kommentar eine Kurzbeschreibung verfasst, die Parameter, return Werte oder exceptions die gethrowed werden, werden ebenfalls beschrieben. In IntelliJ kann man einfach durch klicken auf -> tools -> generate eine Api Dokumentation in HTML automatisch erzeugen. Siehe Bid: 
 
 ![JavaDoc](media/javadoc.png)
 
 ****JUnit Tests****
 
-Es wurden mit Hilfe von JUnit testcases implementiert, die die Funktionalität der StringQueue durchtesten und somit gewährleisten sollten. Es wurde wieder mit IntelliJ gearbeitet, weil sich diese IDE gut für JUnit eignet. Zudem wurden für alle Testcases wie im nachfolgenden Bild sichtbar Javadoc kommentare erstellt: 
+Es wurden mit Hilfe von JUnit testcases implementiert, die die Funktionalität der StringQueue durchtesten und somit gewährleisten sollten. Es wurde wieder mit IntelliJ gearbeitet, weil sich diese IDE gut für JUnit eignet. Zudem wurden für alle Testcases wie im nachfolgenden Bild sichtbar Javadoc Kommentare erstellt: 
 
 ![JavaDoc](media/javadoc_junit.png)
 
@@ -126,8 +127,48 @@ Es wurden mit Hilfe von JUnit testcases implementiert, die die Funktionalität d
 Um das Projekt automatisch mit Hilfe von Maven builden zu können, haben wir dem pom.xml File unsere Entwicklerinfos hinzugefügt. Zudem haben wir die Logging Bibliothek log4j als dependency hinzugefügt.
 
 ****Log4j****
-Dadurch, dass wir vorhin schon eine Logging Bibliothek mit Maven unserem Projekt hinzugefügt haben, konnten wir nun einen statischen Logger erstellen, der jedes Mal beim Aufrufen einer Methode eine Info Nachricht auf die Konsole schreibt und beim Werfen einer Exception eine Error Nachricht auf die Konsole schreibt. 
+
+Dadurch, dass wir vorhin schon eine Logging Bibliothek mit Maven unserem Projekt hinzugefügt haben, konnten wir nun einen statischen Logger erstellen, der jedes Mal beim Aufrufen einer Methode eine Info Nachricht auf die Konsole schreibt und beim Werfen einer Exception eine Error Nachricht auf die Konsole schreibt. Zusätzlich mussten wir noch eine .propertis Datei von einer früheren Übung hinzufügen. 
 
 ![Log4j](media/logging.PNG)
 
+****Maven Site****
 
+Zuerst wurden die notwendigen plugins dem pom.xml hinzugefügt, um mit mvn site eine Dokumentation, die auch Javadoc und die dazugehörigen Tests beinhaltet, zu generieren. Es wurde auch noch mit site.xml ein eigener Menüpunkt erstellt, der auf eine eigene in Markdwon geschriebene Seite verweist, wo die Funktion einer Queue erläutert wird. 
+
+![mvnsite](media/mvnsite.PNG)
+
+![mvnsite](media/mvnsitereport.PNG)
+
+
+****Übung Github Flavour****
+
+Um den Umgang mit Github Flavour (ein Dialekt einer markdown Sparche) zu erlernen, sollen wir jeweils ein paar Zeilen Python und Java Code schreiben und richtig formatiert ausgeben, was folgendermaßsen aussieht: 
+
+Python: 
+
+ ```python
+ def fakultaet(x):
+ return x * fakultaet(x - 1) if x > 1 else 1
+ ```
+ 
+ Java: 
+ 
+ ```java
+ public class HalloWelt {
+ public static void main(String[] args) {
+ System.out.println("Hallo Welt!");
+ }
+ }
+ ```
+ 
+ **Links/Literatur**
+ 
+ - erklärt maven site
+ https://maven.apache.org/doxia/references/index.html
+ - hilft bei GitHub Flavor
+ https://github.github.com/gfm/
+ - erklärt logging
+ http://openbook.rheinwerk-verlag.de/java7/1507_20_001.html
+ 
+ 
