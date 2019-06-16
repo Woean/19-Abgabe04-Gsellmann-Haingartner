@@ -49,19 +49,19 @@ management/tree/master/test-automation/Queue
 
   - [x] Integration Logging Bibliothek log4j mittels Maven Dependencies.
 
-- [ ] Log4j (Version 2) integrieren und in jeder Methode ins Log schreiben
+- [x] Log4j (Version 2) integrieren und in jeder Methode ins Log schreiben
 
-  - [ ] Siehe aktualisiertes Stack Beispiel.
+  - [x] Siehe aktualisiertes Stack Beispiel.
 
-  - [ ] Erstellen Sie einen Statischen Logger der auf die Konsole schreibt.
+  - [x] Erstellen Sie einen Statischen Logger der auf die Konsole schreibt.
 
-  - [ ] Konfigurieren Sie Logger über ein properties File.
+  - [x] Konfigurieren Sie Logger über ein properties File.
 
-  - [ ] Geben Sie eine Info Lognachricht bei Aufruf einer jeden Methode aus.
+  - [x] Geben Sie eine Info Lognachricht bei Aufruf einer jeden Methode aus.
 
-  - [ ] Geben Sie eine Error Lognachricht aus bevor Sie einen Fehler werfen.
+  - [x] Geben Sie eine Error Lognachricht aus bevor Sie einen Fehler werfen.
 
-  - [ ] Ergebnisse (Konsolenausgabe) als Bild in Dokumentation einfließen lassen.
+  - [x] Ergebnisse (Konsolenausgabe) als Bild in Dokumentation einfließen lassen.
 
 - [ ] Maven Site Dokumentation erstellen
 
@@ -123,4 +123,11 @@ Es wurden mit Hilfe von JUnit testcases implementiert, die die Funktionalität d
 
 ****pom.xml****
 
-Um das Projekt automatisch mit Hilfe von Maven builden zu können, haben wir dem pom.xml File unsere Entwicklerinfos hinzugefügt.Zudem haben wir die Logging Bibliothek log4j als dependency hinzugefügt. 
+Um das Projekt automatisch mit Hilfe von Maven builden zu können, haben wir dem pom.xml File unsere Entwicklerinfos hinzugefügt. Zudem haben wir die Logging Bibliothek log4j als dependency hinzugefügt.
+
+****Log4j****
+Dadurch, dass wir vorhin schon eine Logging Bibliothek mit Maven unserem Projekt hinzugefügt haben, konnten wir nun einen statischen Logger erstellen, der jedes Mal beim Aufrufen einer Methode eine Info Nachricht auf die Konsole schreibt und beim Werfen einer Exception eine Error Nachricht auf die Konsole schreibt. 
+
+![Log4j](media/javadoc_junit.png)
+
+
