@@ -128,6 +128,6 @@ Um das Projekt automatisch mit Hilfe von Maven builden zu können, haben wir dem
 ****Log4j****
 Dadurch, dass wir vorhin schon eine Logging Bibliothek mit Maven unserem Projekt hinzugefügt haben, konnten wir nun einen statischen Logger erstellen, der jedes Mal beim Aufrufen einer Methode eine Info Nachricht auf die Konsole schreibt und beim Werfen einer Exception eine Error Nachricht auf die Konsole schreibt. 
 
-![Log4j](media/javadoc_junit.png)
+![Log4j](media/logging.png)
 
 
