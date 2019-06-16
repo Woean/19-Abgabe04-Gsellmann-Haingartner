@@ -15,7 +15,7 @@ public class Main {
         versuch.remove();
 
         System.out.print(versuch.peek());
-        versuch.element();
+
 
     }
 }
