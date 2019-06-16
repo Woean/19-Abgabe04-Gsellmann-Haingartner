@@ -23,9 +23,35 @@
 		  <properties>
 			<picUrl>https://avatars2.githubusercontent.com/u/15637184</picUrl>
 		  </properties>
-		</developer>     
+		</developer>
+
+    <developer>
+            <id>wernerhaingartner</id>
+            <name>Werner Haingartner</name>
+            <email>werner.haingartner@fh-joanneum.at</email>
+            <organization>FH JOANNEUM GmbH</organization>
+            <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
+            <roles>
+                <role>Student</role>
+            </roles>
+            <timezone>Europe/Vienna</timezone>
+</developer>
+
+<developer>
+        <id>geraldgsellmann</id>
+        <name>Gerald Gsellmann</name>
+        <email>gerald.gsellmann@fh-joanneum.at</email>
+        <organization>FH JOANNEUM GmbH</organization>
+        <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
+        <roles>
+            <role>Student</role>
+        </roles>
+        <timezone>Europe/Vienna</timezone>
+</developer>
+
+
 	</developers>
-	
+
     <build>
         <plugins>
             <plugin>
@@ -36,6 +62,17 @@
                     <release>11</release>
                 </configuration>
             </plugin>
+
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-javadoc-plugin</artifactId>
+               <version>3.1.0</version>
+               <configuration>
+                   <show>private</show>
+                   <nohelp>true</nohelp>
+               </configuration>
+</plugin>
+
         </plugins>
     </build>
 
