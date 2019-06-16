@@ -75,11 +75,11 @@ management/tree/master/test-automation/Queue
 
     - [x] Der Inhalt der manuell erstellten Seite sollte ersichtlich sein
 
-- [ ] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
+- [x] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
 
-  - [ ] Übertragung Information aus Labreport Template.
+  - [x] Übertragung Information aus Labreport Template.
 
-  - [ ] Alle Schritte dieser Übung nachvollziehbar erläutern.
+  - [x] Alle Schritte dieser Übung nachvollziehbar erläutern.
 
   - [ ] Übung Github Flavor: Erstellen Sie einen Codeblock im Dokument, welcher 3   Zeilen Python und 3 Zeilen Java Source Code korrekt darstellt.
 
@@ -135,5 +135,27 @@ Dadurch, dass wir vorhin schon eine Logging Bibliothek mit Maven unserem Projekt
 
 Zuerst wurden die notwendigen plugins dem pom.xml hinzugefügt, um mit mvn site eine Dokumentation, die auch Javadoc und die dazugehörigen Tests beinhaltet, zu generieren. Es wurde auch noch mit site.xml ein eigener Menüpunkt erstellt, der auf eine eigene in Markdwon geschriebene Seite verweist, wo die Funktion einer Queue erläutert wird. 
 
-[mvnsite](media/mvnsite.PNG)
+![mvnsite](media/mvnsite.PNG)
 
+****Übung Github Flavour****
+
+Um den Umgang mit Github Flavour (ein Dialekt einer markdown Sparche) zu erlernen, sollen wir jeweils ein paar Zeilen Python und Java Code darstellen was folgendermaßsen aussieht: 
+
+Python: 
+
+ ```python
+ def fakultaet(x):
+ return x * fakultaet(x - 1) if x > 1 else 1
+ ```
+ 
+ Java: 
+ 
+ ```java
+ public class HalloWelt {
+ public static void main(String[] args) {
+ System.out.println("Hallo Welt!");
+ }
+ }
+ ```
+ 
+ 
