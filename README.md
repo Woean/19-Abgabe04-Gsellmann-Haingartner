@@ -43,11 +43,11 @@ management/tree/master/test-automation/Queue
 
   - [x] Integrieren Sie ein Bild (der generierten Dokumentation) in Ihren Report.
 
-- [ ] Passen Sie Ihr pom.xml auf das Projekt an, damit Sie das Projekt erstellen aber auch Dokumentation generieren können.
+- [x] Passen Sie Ihr pom.xml auf das Projekt an, damit Sie das Projekt erstellen aber auch Dokumentation generieren können.
 
-  - [ ] EntwicklerInnen Informationen hinzufügen.
+  - [x] EntwicklerInnen Informationen hinzufügen.
 
-  - [ ] Integration Logging Bibliothek log4j mittels Maven Dependencies.
+  - [x] Integration Logging Bibliothek log4j mittels Maven Dependencies.
 
 - [ ] Log4j (Version 2) integrieren und in jeder Methode ins Log schreiben
 
@@ -120,3 +120,7 @@ erzeugt wird, werden die übergebenen zu beschreibenden Parameter @param schon v
 Es wurden mit Hilfe von JUnit testcases implementiert, die die Funktionalität der StringQueue durchtesten und somit gewährleisten sollten. Es wurde wieder mit IntelliJ gearbeitet, weil sich diese IDE gut für JUnit eignet. Zudem wurden für alle Testcases wie im nachfolgenden Bild sichtbar Javadoc kommentare erstellt: 
 
 ![JavaDoc](media/javadoc_junit.png)
+
+****pom.xml****
+
+Um das Projekt automatisch mit Hilfe von Maven builden zu können, haben wir dem pom.xml File unsere Entwicklerinfos hinzugefügt.Zudem haben wir die Logging Bibliothek log4j als dependency hinzugefügt. 
