@@ -63,17 +63,17 @@ management/tree/master/test-automation/Queue
 
   - [x] Ergebnisse (Konsolenausgabe) als Bild in Dokumentation einfließen lassen.
 
-- [ ] Maven Site Dokumentation erstellen
+- [x] Maven Site Dokumentation erstellen
 
-  - [ ] Inklusive Javadoc Code und Javadoc Test Klassen
+  - [x] Inklusive Javadoc Code und Javadoc Test Klassen
 
-  - [ ] Inklusive Menü mit Verweis auf manuell erstellte Seite
+  - [x] Inklusive Menü mit Verweis auf manuell erstellte Seite
 
-    - [ ] Seite erläutert Funktionsweise Queue
+    - [x] Seite erläutert Funktionsweise Queue
 
-  - [ ] Geben Sie ein Bild der Maven Site Dokumentation in den Lab Report
+  - [x] Geben Sie ein Bild der Maven Site Dokumentation in den Lab Report
 
-    - [ ] Der Inhalt der manuell erstellten Seite sollte ersichtlich sein
+    - [x] Der Inhalt der manuell erstellten Seite sollte ersichtlich sein
 
 - [ ] Erstellung detaillierter und nachvollziehbarer Markdown Lab Report
 
@@ -126,8 +126,14 @@ Es wurden mit Hilfe von JUnit testcases implementiert, die die Funktionalität d
 Um das Projekt automatisch mit Hilfe von Maven builden zu können, haben wir dem pom.xml File unsere Entwicklerinfos hinzugefügt. Zudem haben wir die Logging Bibliothek log4j als dependency hinzugefügt.
 
 ****Log4j****
+
 Dadurch, dass wir vorhin schon eine Logging Bibliothek mit Maven unserem Projekt hinzugefügt haben, konnten wir nun einen statischen Logger erstellen, der jedes Mal beim Aufrufen einer Methode eine Info Nachricht auf die Konsole schreibt und beim Werfen einer Exception eine Error Nachricht auf die Konsole schreibt. 
 
 ![Log4j](media/logging.PNG)
 
+****Maven Site****
+
+Zuerst wurden die notwendigen plugins dem pom.xml hinzugefügt, um mit mvn site eine Dokumentation, die auch Javadoc und die dazugehörigen Tests beinhaltet, zu generieren. Es wurde auch noch mit site.xml ein eigener Menüpunkt erstellt, der auf eine eigene in Markdwon geschriebene Seite verweist, wo die Funktion einer Queue erläutert wird. 
+
+[mvnsite](media/mvnsite.PNG)
 
